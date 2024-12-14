@@ -38,5 +38,5 @@ jobs:
           sudo npm run build --prod  # Build the Angular app
           # Move build files to web server directory
           rm -rf /var/www/html/*
-          cp -r dist/* /var/www/html/
+          sudo cp -r dist/* /var/www/html/
         EOF
