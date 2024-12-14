@@ -40,7 +40,7 @@ jobs:
           # Move build files to web server directory
           sudo rm -rf /var/www/html/*
           sudo cp -r dist/* /var/www/html/
-          pkill -f "ng serve" || echo "No running Angular server found."
+          #pkill -f "ng serve" || echo "No running Angular server found."
           exit
         EOF
         
