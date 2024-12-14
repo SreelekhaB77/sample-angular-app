@@ -3,7 +3,7 @@ name: Deploy Angular App
 on:
   push:
     branches:
-      - main  # Deploy on every commit to the main branch
+      - master  # Deploy on every commit to the main branch
 
 jobs:
   deploy:
