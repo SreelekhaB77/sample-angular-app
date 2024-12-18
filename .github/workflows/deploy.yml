@@ -31,7 +31,7 @@ jobs:
       run: |
         ssh -i ~/.ssh/id_ed25519 $SERVER_USER@$SERVER_IP << 'EOF'
           set -e  # Exit immediately if a command fails
-          cd /home/ubuntu/sample-angular-app  # Change to your project directory
+          cd /home/ubuntu/project/sample-angular-app  # Change to your project directory
           git pull origin master  # Pull latest changes
           sudo npm install --legacy-peer-deps   # Install dependencie
           sudo ng serve --host 0.0.0.0 --port 4200 &
